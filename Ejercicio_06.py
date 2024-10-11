@@ -6,11 +6,12 @@
 
 while True:
     try:
-        n = int(input("Por favor, introduzca un número entero"))
-        if n >= 0:
+        n = int(input("Por favor, introduzca un número entero positivo"))
+        if n > 0:
             break
         else: 
             print("El número introducido no es válido")
     except: ValueError
+
 suma = (n * (n + 1)) / 2
-print("la suma de todos los enteros desde 1 es:", int(suma))
+print("la suma de todos los enteros desde 1 hasta", n, "es:", int(suma))
